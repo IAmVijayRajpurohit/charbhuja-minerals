@@ -2,38 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sandstone - charbhuja-minerals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>charbhuja-minerals - Sandstone</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body { font-family: sans-serif; }
-    .hero { background: #f3f3f3; padding: 80px 0; text-align: center; }
-    .product img { max-width: 100%; height: auto; border-radius: 5px; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .top-header {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+    .top-header .social-icons a {
+      margin-left: 10px;
+      color: #333;
+    }
+    .navbar-brand img {
+      height: 50px;
+    }
+    .product-image {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .footer {
+      background-color: #212529;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <h1>Natural Sandstone</h1>
-    <p>Ideal for landscaping, garden paths and walls</p>
-  </div>
-  <div class="container py-5">
-    <div class="row g-4">
-      <div class="col-md-4 product">
-        <img src="https://via.placeholder.com/400x300?text=Red+Sandstone" alt="Red Sandstone">
-        <h5 class="mt-2">Red Sandstone</h5>
-        <p>Traditional choice for Indian architecture.</p>
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="fa fa-phone"></i> +91-1234567890 &nbsp;
+        <i class="fa fa-envelope"></i> info@charbhuja-minerals.com
       </div>
-      <div class="col-md-4 product">
-        <img src="https://via.placeholder.com/400x300?text=Mint+Sandstone" alt="Mint Sandstone">
-        <h5 class="mt-2">Mint Sandstone</h5>
-        <p>Soft pastel tones perfect for outdoor areas.</p>
-      </div>
-      <div class="col-md-4 product">
-        <img src="https://via.placeholder.com/400x300?text=Teakwood+Sandstone" alt="Teakwood Sandstone">
-        <h5 class="mt-2">Teakwood Sandstone</h5>
-        <p>Beautiful grainy patterns for natural look.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
   </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Placeholder_logo.png/200px-Placeholder_logo.png" alt="charbhuja-minerals" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="marble.html">Marble</a></li>
+              <li><a class="dropdown-item" href="granite.html">Granite</a></li>
+              <li><a class="dropdown-item" href="sandstone.html">Sandstone</a></li>
+            </ul>
+          </li>
+
+          <!-- Price List Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Price List</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="price-list-marble.html">Marble Price List</a></li>
+              <li><a class="dropdown-item" href="price-list-granite.html">Granite Price List</a></li>
+              <li><a class="dropdown-item" href="price-list-sandstone.html">Sandstone Price List</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sandstone Content -->
+  <section class="container my-5">
+    <h1>Sandstone Products</h1>
+    <p>Discover our natural sandstone varieties perfect for landscaping and construction.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Sandstone 1" class="product-image" />
+        <h5>Red Sandstone</h5>
+        <p>Durable red sandstone ideal for outdoor use.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?auto=format&fit=crop&w=600&q=80" alt="Sandstone 2" class="product-image" />
+        <h5>Brown Sandstone</h5>
+        <p>Natural brown sandstone with a rustic look.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Sandstone 3" class="product-image" />
+        <h5>Yellow Sandstone</h5>
+        <p>Warm yellow tones for elegant landscaping.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>charbhuja-minerals</h5>
+          <p>Leading supplier of Indian and imported marble, granite, and natural stones.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sandstone.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>Email: info@charbhuja-minerals.com</p>
+          <p>Phone: +91-1234567890</p>
+          <p>Address: Kishangarh, Rajasthan, India</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

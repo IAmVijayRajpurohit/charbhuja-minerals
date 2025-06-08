@@ -3,38 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Granite Price List - charbhuja-minerals</title>
+  <title>charbhuja-minerals - Granite Price List</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body { font-family: sans-serif; }
-    .hero { background: #e0e0e0; padding: 60px 0; text-align: center; }
-    table { width: 100%; max-width: 600px; margin: 0 auto; }
-    th, td { padding: 12px; text-align: left; }
-    th { background-color: #b88a44; color: white; }
-    tr:nth-child(even) { background-color: #f9f9f9; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .top-header {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+    .top-header .social-icons a {
+      margin-left: 10px;
+      color: #333;
+    }
+    .navbar-brand img {
+      height: 50px;
+    }
+    table {
+      margin-top: 30px;
+    }
+    .footer {
+      background-color: #212529;
+      color: #fff;
+      padding: 40px 0;
+      margin-top: 50px;
+    }
+    .footer a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <h1>Granite Price List</h1>
-    <p>Durable granite slabs at affordable rates</p>
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="fa fa-phone"></i> +91-1234567890 &nbsp;
+        <i class="fa fa-envelope"></i> info@charbhuja-minerals.com
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
   </div>
 
-  <div class="container py-4">
-    <table class="table table-bordered">
-      <thead>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Placeholder_logo.png/200px-Placeholder_logo.png" alt="charbhuja-minerals" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="marble.html">Marble</a></li>
+              <li><a class="dropdown-item" href="granite.html">Granite</a></li>
+              <li><a class="dropdown-item" href="sandstone.html">Sandstone</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Price List</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="price-list-marble.html">Marble Price List</a></li>
+              <li><a class="dropdown-item active" href="price-list-granite.html">Granite Price List</a></li>
+              <li><a class="dropdown-item" href="price-list-sandstone.html">Sandstone Price List</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Price List Content -->
+  <section class="container my-5">
+    <h1>Granite Price List</h1>
+    <p>Our current granite price list for various products (prices in INR per sq. ft.).</p>
+
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
         <tr>
           <th>Granite Type</th>
-          <th>Price per Sq. Ft (INR)</th>
+          <th>Size</th>
+          <th>Price (INR)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Black Galaxy Granite</td><td>₹ 200 - ₹ 260</td></tr>
-        <tr><td>Red Granite</td><td>₹ 170 - ₹ 220</td></tr>
-        <tr><td>Brown Granite</td><td>₹ 160 - ₹ 210</td></tr>
-        <tr><td>Blue Pearl Granite</td><td>₹ 350 - ₹ 400</td></tr>
+        <tr>
+          <td>Black Galaxy</td>
+          <td>12x12 inch</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>Blue Pearl</td>
+          <td>12x12 inch</td>
+          <td>220</td>
+        </tr>
+        <tr>
+          <td>Red Multicolor</td>
+          <td>12x12 inch</td>
+          <td>200</td>
+        </tr>
       </tbody>
     </table>
-  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>charbhuja-minerals</h5>
+          <p>Leading supplier of Indian and imported marble, granite, and natural stones.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="granite.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>Email: info@charbhuja-minerals.com</p>
+          <p>Phone: +91-1234567890</p>
+          <p>Address: Kishangarh, Rajasthan, India</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
