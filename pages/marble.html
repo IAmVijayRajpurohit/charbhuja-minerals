@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>charbhuja-minerals - Marble</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marble - charbhuja-minerals</title>
+  <link rel="icon" href="../img/cm.jpg" type="image/jpeg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,10 +23,13 @@
     .navbar-brand img {
       height: 50px;
     }
-    .product-image {
+    .marble-section img {
       max-width: 100%;
       border-radius: 5px;
-      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .marble-section h2 {
+      margin-bottom: 30px;
     }
     .footer {
       background-color: #212529;
@@ -61,26 +65,22 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Placeholder_logo.png/200px-Placeholder_logo.png" alt="charbhuja-minerals" />
-      </a>
+      <a class="navbar-brand" href="../index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Placeholder_logo.png/200px-Placeholder_logo.png" alt="charbhuja-minerals"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-
-          <!-- Products Dropdown -->
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Products</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="marble.html">Marble</a></li>
+              <li><a class="dropdown-item active" href="marble.html">Marble</a></li>
               <li><a class="dropdown-item" href="granite.html">Granite</a></li>
               <li><a class="dropdown-item" href="sandstone.html">Sandstone</a></li>
+              <li><a class="dropdown-item" href="all-products.html">All Products</a></li>
             </ul>
           </li>
-
-          <!-- Price List Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Price List</a>
             <ul class="dropdown-menu">
@@ -89,7 +89,6 @@
               <li><a class="dropdown-item" href="price-list-sandstone.html">Sandstone Price List</a></li>
             </ul>
           </li>
-
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
@@ -97,25 +96,26 @@
     </div>
   </nav>
 
-  <!-- Marble Content -->
-  <section class="container my-5">
-    <h1>Marble Products</h1>
-    <p>Explore our exquisite collection of marble stones sourced from top quarries.</p>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/white_marble.jpg" alt="Marble 1" class="product-image" />
-        <h5>White Marble</h5>
-        <p>Classic white marble perfect for flooring and interiors.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/black_marble.jpg" alt="Marble 2" class="product-image" />
-        <h5>Black Marble</h5>
-        <p>Elegant black marble with natural veins and patterns.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/pink_marble.jpg" alt="Marble 3" class="product-image" />
-        <h5>Pink Marble</h5>
-        <p>Soft pink hues for a unique and stylish look.</p>
+  <!-- Marble Section -->
+  <section class="marble-section py-5">
+    <div class="container">
+      <h2 class="text-center">Our Marble Collection</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <img src="../img/white_marble.jpg" alt="White Marble" class="img-fluid">
+          <h5 class="mt-2">White Marble</h5>
+          <p>Classic elegance perfect for interiors and temples.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/black_marble.jpg" alt="Black Marble" class="img-fluid">
+          <h5 class="mt-2">Black Marble</h5>
+          <p>Modern and luxurious, ideal for countertops and flooring.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/pink_marble.jpg" alt="Pink Marble" class="img-fluid">
+          <h5 class="mt-2">Pink Marble</h5>
+          <p>Soft and subtle color suited for artistic decor.</p>
+        </div>
       </div>
     </div>
   </section>
