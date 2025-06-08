@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>charbhuja-minerals - About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Charbhuja Minerals</title>
+  <link rel="icon" type="image/jpeg" href="../img/cm.jpg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
@@ -22,11 +23,22 @@
     .navbar-brand img {
       height: 50px;
     }
+    .page-heading {
+      text-align: center;
+      padding: 60px 0 30px;
+      background-color: #f5f5f5;
+    }
+    .page-heading h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .about-section {
+      padding: 40px 0;
+    }
     .footer {
       background-color: #212529;
       color: #fff;
       padding: 40px 0;
-      margin-top: 50px;
     }
     .footer a {
       color: #bbb;
@@ -38,7 +50,6 @@
   </style>
 </head>
 <body>
-
   <!-- Top Header -->
   <div class="top-header">
     <div class="container d-flex justify-content-between align-items-center">
@@ -58,46 +69,58 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="../index.html">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Placeholder_logo.png/200px-Placeholder_logo.png" alt="charbhuja-minerals" />
+        <img src="../img/charbhuja_minerals.jpg" alt="Charbhuja Minerals">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu text-center">
               <li><a class="dropdown-item" href="marble.html">Marble</a></li>
               <li><a class="dropdown-item" href="granite.html">Granite</a></li>
               <li><a class="dropdown-item" href="sandstone.html">Sandstone</a></li>
             </ul>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Price List</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="price-list-marble.html">Marble Price List</a></li>
-              <li><a class="dropdown-item" href="price-list-granite.html">Granite Price List</a></li>
-              <li><a class="dropdown-item" href="price-list-sandstone.html">Sandstone Price List</a></li>
-            </ul>
-          </li>
-
           <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- About Content -->
-  <section class="container my-5">
-    <h1>About charbhuja-minerals</h1>
-    <p>Established in Kishangarh, Rajasthan, charbhuja-minerals is a trusted supplier and exporter of premium natural stones including marble, granite, and sandstone. With decades of experience, we provide quality products sourced directly from quarries.</p>
+  <!-- Page Heading -->
+  <section class="page-heading">
+    <div class="container">
+      <h1>About Charbhuja Minerals</h1>
+    </div>
+  </section>
 
-    <p>Our mission is to deliver excellence and value to customers worldwide. We cater to builders, architects, and interior designers with customized orders and timely delivery.</p>
+  <!-- About Content -->
+  <section class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="../img/marble.jpg" alt="About Charbhuja Minerals" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h3>Our Journey</h3>
+          <p>
+            Charbhuja Minerals is one of the most trusted names in the natural stone industry, known for its commitment to quality and excellence. With decades of experience, we offer an extensive range of premium Indian marble, granite, and sandstone, serving clients across the globe.
+          </p>
+          <h4>What We Offer</h4>
+          <ul>
+            <li>High-quality Marble, Granite, and Sandstone</li>
+            <li>Global Export Capabilities</li>
+            <li>Customized Solutions for Homes & Businesses</li>
+            <li>Reliable Customer Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
