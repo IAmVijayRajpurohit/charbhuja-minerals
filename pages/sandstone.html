@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>charbhuja-minerals - Sandstone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sandstone - charbhuja-minerals</title>
+  <link rel="icon" href="../img/cm.jpg" type="image/jpeg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,10 +23,13 @@
     .navbar-brand img {
       height: 50px;
     }
-    .product-image {
+    .sandstone-section img {
       max-width: 100%;
       border-radius: 5px;
-      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .sandstone-section h2 {
+      margin-bottom: 30px;
     }
     .footer {
       background-color: #212529;
@@ -61,26 +65,22 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Placeholder_logo.png/200px-Placeholder_logo.png" alt="charbhuja-minerals" />
-      </a>
+      <a class="navbar-brand" href="../index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Placeholder_logo.png/200px-Placeholder_logo.png" alt="charbhuja-minerals"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-
-          <!-- Products Dropdown -->
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Products</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="marble.html">Marble</a></li>
               <li><a class="dropdown-item" href="granite.html">Granite</a></li>
-              <li><a class="dropdown-item" href="sandstone.html">Sandstone</a></li>
+              <li><a class="dropdown-item active" href="sandstone.html">Sandstone</a></li>
+              <li><a class="dropdown-item" href="all-products.html">All Products</a></li>
             </ul>
           </li>
-
-          <!-- Price List Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Price List</a>
             <ul class="dropdown-menu">
@@ -89,7 +89,6 @@
               <li><a class="dropdown-item" href="price-list-sandstone.html">Sandstone Price List</a></li>
             </ul>
           </li>
-
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
@@ -97,25 +96,26 @@
     </div>
   </nav>
 
-  <!-- Sandstone Content -->
-  <section class="container my-5">
-    <h1>Sandstone Products</h1>
-    <p>Discover our natural sandstone varieties perfect for landscaping and construction.</p>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/gold_sandstone.jpg" alt="Sandstone 1" class="product-image" />
-        <h5>Gold Sandstones</h5>
-        <p>Durable gold sandstone ideal for outdoor use.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/teakwood_sandstone.jpg" alt="Sandstone 2" class="product-image" />
-        <h5>teakwood Sandstones</h5>
-        <p>Natural teakwood sandstone with a rustic look.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/red_sandstone.jpg" alt="Sandstone 3" class="product-image" />
-        <h5>red Sandstone</h5>
-        <p>Warm red tones for elegant landscaping.</p>
+  <!-- Sandstone Section -->
+  <section class="sandstone-section py-5">
+    <div class="container">
+      <h2 class="text-center">Our Sandstone Collection</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <img src="../img/gold_sandstone.jpg" alt="Gold Sandstone" class="img-fluid">
+          <h5 class="mt-2">Gold Sandstone</h5>
+          <p>Rich golden tones ideal for patios, walls, and outdoor paving.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/teakwood_sandstone.jpg" alt="Teakwood Sandstone" class="img-fluid">
+          <h5 class="mt-2">Teakwood Sandstone</h5>
+          <p>Known for its wood-like grains, perfect for stylish outdoor decor.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/red_sandstone.jpg" alt="Red Sandstone" class="img-fluid">
+          <h5 class="mt-2">Red Sandstone</h5>
+          <p>Bold and traditional, great for garden paths and landscaping.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -132,7 +132,7 @@
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="sandstone.html">Products</a></li>
+            <li><a href="marble.html">Products</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
